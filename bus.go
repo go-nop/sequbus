@@ -12,7 +12,7 @@ type CommandBus[T any] struct {
 	head *command[T]
 }
 
-// NewCommandBus creates a new instance of CommandBus
+// New creates a new instance of CommandBus
 func New[T any]() *CommandBus[T] {
 	return &CommandBus[T]{}
 }
