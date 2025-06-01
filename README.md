@@ -43,7 +43,7 @@ func (v ValidateUser) Run(ctx context.Context, user *User) error {
 ### 2. Register Commands to the Bus
 
 ```go
-bus := sequbus.NewCommandBus[*User]()
+bus := sequbus.New[*User]()
 bus.Register(ValidateUser{})
 // bus.Register(SendWelcomeEmail{}) // More commands
 
